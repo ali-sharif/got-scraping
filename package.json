@@ -23,7 +23,7 @@
     "types": "./dist/index.d.ts",
     "type": "module",
     "dependencies": {
-        "got": "^14.2.1",
+        "got": "^14.4.6",
         "header-generator": "^2.1.41",
         "http2-wrapper": "^2.2.0",
         "mimic-response": "^4.0.0",
