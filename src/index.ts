@@ -63,8 +63,8 @@ const gotScraping = originalGot.extend({
         insecureHTTPParser: true,
     },
     agent: {
-        http: new TransformHeadersAgent(http.globalAgent),
-        https: new TransformHeadersAgent(https.globalAgent),
+        http: new TransformHeadersAgent(new http.Agent({ keepAlive: false })),
+        https: new TransformHeadersAgent(new https.Agent({ keepAlive: false })),
     },
     hooks: {
         init,
